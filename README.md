@@ -22,7 +22,7 @@ You should start by downloading [a copy of the data file](1091402.txt).
 Note once again that temperatures in this dataset are given in degrees Fahrenheit, as noted in the [sample data file](ftp://ftp.ncdc.noaa.gov/pub/data/cdo/samples/GHCND_sample_pdf.pdf).
 Additional information about the data format can be found in the [hints for Exercise 6](https://geo-python.github.io/2017/lessons/L6/exercise-6-hints.html).
 
-# Problem 1 - Reading in a tricky data file (6 points)
+# Problem 1 - Reading in a tricky data file (5 points)
 
 You first task for this exercise is to read in the data file to a variable called `data`.
 This should be done using the `read_csv()` function in Pandas, and the resulting DataFrame should have the following attributes:
@@ -67,7 +67,7 @@ You can again consult the [hints for Exercise 6](https://geo-python.github.io/20
 You goal is to figure out how to use the datetime functionalities of Pandas shortly mentioned in the [Lesson 6 materials](https://geo-python.github.io/2017/lessons/L6/lessons/L6/pandas-analysis.html#string-manipulation-in-pandas.html).
 You should find out how to create a DataTime index in Pandas and use the `DataFrame.resample()` function to directly calculate the mean monthly temperatures from the daily observation values.
 
-# Problem 3 - Calculating temperature anomalies (4 points)
+# Problem 3 - Calculating temperature anomalies (5 points)
 
 Our goal in this problem is to calculate monthly temperature anomalies in order to see how temperatures have changed over time, relative to the observation period between 1952-1980.
 We will again do this by modifying your `temperature_anomalies.py` script.
@@ -86,7 +86,7 @@ In order to complete the problem, you must do two things:
 - Upload the updated script to your repository for this week's exercise.
 
 
-## Problem 4
+## Problem 4 (5 points)
 
 Download your own data (daily summaries for years **1959-2017 August**) for **Rovaniemi Lentoasema**, from [NOAA Climate Data Online Search](https://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND).
 Make sure to click on starting day (and ending day) in the date selection panel after changing year!
