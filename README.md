@@ -104,13 +104,7 @@ Next, you should use the approaches learned during this week and the same approa
 
 - Are there weather anomalies in Rovaniemi: Calculate the monthly temperature differences between Rovaniemi and Helsinki stations
 - How different the summer temperatures (June, July, August) have been between Helsinki (used in Problems 1-3) and Rovaniemi station?
-    - Calculate the monthly differences into a DataFrame and save it into your own Exercise repository for this week
+    - Calculate the monthly differences into a DataFrame and save it (as `CSV` file) into your own Exercise repository for this week
     - What were the summer mean temperatures for both of these stations?
     - What were the summer standard deviations for both of these stations?
 - Upload your script and data to GitHub.
-
-
-1. Calculate the mean values for the temperatures for each month in the years 1952-1980 in a data Series
-2. Determine temperature anomalies for every month in the `monthlyTemps` DataFrame
-3. Print out the temperature anomalies for the month of February 2015
-4. Upload your updated script to your repository for this week's exercise
