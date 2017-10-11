@@ -82,3 +82,7 @@ In order to complete the problem, you must do two things:
 
 **For this problem**
 
+1. Calculate the mean values for the temperatures for each month in the years 1952-1980 in a data Series
+2. Determine temperature anomalies for every month in the `monthlyTemps` DataFrame
+3. Print out the temperature anomalies for the month of February 2015
+4. Upload your updated script to your repository for this week's exercise
