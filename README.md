@@ -75,6 +75,7 @@ In order to complete the problem, you must do two things:
     Note that is monthly mean is slightly different than the monthly mean temperatures calculated earlier.
     Here, we are looking to find the mean temperature for January in the period 1952-1980, February for the same period, etc.
     You should end up with 12 values, 1 mean temperature for each month in that period, and store them in a Pandas Series called `referenceTemps`.
+    Remember, these temperatures should be in degrees Celsius.
 
 - Once you have the monthly mean values for each of the 12 months, you can then calculate a temperature anomaly for every month in the `monthlyTemps` DataFrame.
     The temperature anomaly we want to calculate is simply the temperature for one month in `monthlyTemps` minus the corresponding monthly average temperature from the `referenceTemps` data Series.
