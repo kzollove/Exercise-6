@@ -54,7 +54,7 @@ You can use the `DataFrame.resample()` function for this.
 You goal is to figure out how to use the `resample()` function to directly calculate the mean monthly temperatures from the daily observation values.
 You can again consult the [hints for Exercise 6](https://geo-python.github.io/2017/lessons/L6/exercise-6-hints.html) if you are stuck.
 
-For this problem modify your `temperature_anomalies.py` script to
+**For this problem modify your `temperature_anomalies.py` script to**
 
 1. Calculate the monthly average temperatures for the entire data file using the `resample()` function
 2. Save the output to a new Pandas Series called `dataMonths`
@@ -68,11 +68,14 @@ Our goal in this problem is to calculate monthly temperature anomalies in order 
 We will again do this by modifying your `temperature_anomalies.py` script.
 In order to complete the problem, you must do two things:
 
-1. You need to calculate a mean temperature *for each month* for the period 1952-1980 using the data in the data file.
+- You need to calculate a mean temperature *for each month* for the period 1952-1980 using the data in the data file.
     Note that is monthly mean is slightly different than the monthly mean temperatures calculated earlier.
     Here, we are looking to find the mean temperature for January in the period 1952-1980, February for the same period, etc.
-    You should end up with 12 values, 1 mean temperature for each month in that period.
+    You should end up with 12 values, 1 mean temperature for each month in that period, and store them in a Pandas Series called `referenceTemps`.
 
-2. Once you have the monthly mean values for each of the 12 months, you can then calculate a temperature anomaly for every month in the `dataMonthsC` 
-In this problem, you should now calculate the temperature anomalies to see how temperatures have been changing on average over the age range in the data file.
-First, we need to calculate a reference temperature value, which is the average temperature 
+- Once you have the monthly mean values for each of the 12 months, you can then calculate a temperature anomaly for every month in the `monthlyTemps` DataFrame.
+    The temperature anomaly we want to calculate is simply the temperature for one month in `monthlyTemps` minus the corresponding monthly average temperature from the `referenceTemps` data Series.
+    You should thus end up with a new column in the `monthlyTemps` DataFrame showing the temperature anomaly, the difference in temperature for a given month (e.g., February 1960) compared to the average (e.g., for February 1952-1980).
+
+**For this problem**
+
