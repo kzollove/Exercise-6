@@ -40,7 +40,7 @@ You can find hints about how to do these things in the [description of Exercise 
 - When is the first observation?
 - When is the last?
 
-For this problem
+**For this problem**
 
 1. Create a new script file called `temperature_anomalies.py`
 2. Make sure the script can read in the data file
@@ -59,7 +59,7 @@ For this problem modify your `temperature_anomalies.py` script to
 1. Calculate the monthly average temperatures for the entire data file using the `resample()` function
 2. Save the output to a new Pandas Series called `dataMonths`
 3. Create a second Series called `dataMonthsC` that has the monthly temperatures in Celsius.
-4. Merge the two data Series into a single Pandas DataFrame using the `pd.concat()` function.
+4. Merge the two data Series into a single Pandas DataFrame called `monthlyData` using the `pd.concat()` function.
 4. Upload the updated script to your repository for this week's exercise.
 
 # Problem 3 - Calculating temperature anomalies (4 points)
