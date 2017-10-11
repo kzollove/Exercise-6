@@ -96,7 +96,11 @@ Use **Standard** units. From the next page, add your own email address where the
 
 Write your codes into a separate `weather_comparisons.py` file.
 
-After you have downloaded the data. You should use the approaches learned during this week and the same approaches as in Problem 3 to answer / do:
+After you have downloaded the data. you should first,
+
+- Calculate the average temperature using columns `TMAX` and `TMIN` and insert those values into a column called `TAVG`.
+
+Next, you should use the approaches learned during this week and the same approaches as in Problem 3 to answer / do:
 
 - Were there weather anomalies in Rovaniemi?
 - Calculate the monthly temperature differences between Rovaniemi and Helsinki stations
