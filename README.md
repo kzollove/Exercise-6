@@ -30,7 +30,6 @@ This should be done using the `read_csv()` function in Pandas, and the resulting
   - The numerical values for rainfall and temperature read in as numbers
   - The second row of the datafile should be skipped, but the text labels for the columns should be from the first row
   - The no-data values should properly be converted to `NaN`
-  - The data should be indexed by the `DATE`, properly parsed to be a date index
 
 You can find hints about how to do these things in the [description of Exercise 5](https://github.com/Geo-Python-2017/Exercise-5) and the [hints for Exercise 6](https://geo-python.github.io/2017/lessons/L6/exercise-6-hints.html).
 
@@ -50,17 +49,21 @@ You can find hints about how to do these things in the [description of Exercise 
 # Problem 2 - Calculating monthly average temperatures (3 points)
 
 For this problem our goal is to calculate monthly average temperature values in degrees Celsius from the daily values we have in the data file.
-You can use the `DataFrame.resample()` function for this.
-You goal is to figure out how to use the `resample()` function to directly calculate the mean monthly temperatures from the daily observation values.
+You can use the approaches taught during the Lesson 6 to solve this .
 You can again consult the [hints for Exercise 6](https://geo-python.github.io/2017/lessons/L6/exercise-6-hints.html) if you are stuck.
 
 For this problem modify your `temperature_anomalies.py` script to
 
-1. Calculate the monthly average temperatures for the entire data file using the `resample()` function
+1. Calculate the monthly average temperatures for the entire data file using the approaches taught during the lecture
 2. Save the output to a new Pandas Series called `dataMonths`
 3. Create a second Series called `dataMonthsC` that has the monthly temperatures in Celsius.
-4. Merge the two data Series into a single Pandas DataFrame called `monthlyData` using the `pd.concat()` function.
+4. Merge the two data Series into a single Pandas DataFrame called `monthlyData` using the `pd.concat()` function (see the [documentation of Pandas](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.concat.html) or hints if needed).
 4. Upload the updated script to your repository for this week's exercise.
+
+## Problem 2.1 (optional)
+
+You goal is to figure out how to use the datetime functionalities of Pandas shortly mentioned in the [Lesson 6 materials](https://geo-python.github.io/2017/lessons/L6/lessons/L6/pandas-analysis.html#string-manipulation-in-pandas.html).
+You should find out how to create a DataTime index in Pandas and use the `DataFrame.resample()` function to directly calculate the mean monthly temperatures from the daily observation values.
 
 # Problem 3 - Calculating temperature anomalies (4 points)
 
