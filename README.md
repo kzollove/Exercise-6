@@ -79,9 +79,9 @@ In order to complete the problem, you must do two things:
     You should end up with 12 values, 1 mean temperature for each month in that period, and store them in a Pandas Series called `referenceTemps`.
     Remember, these temperatures should be in degrees Celsius.
 
-- Once you have the monthly mean values for each of the 12 months, you can then calculate a temperature anomaly for every month in the `monthlyTemps` DataFrame.
+- Once you have the monthly mean values for each of the 12 months, you can then calculate a temperature anomaly for every month in the `monthlyData` DataFrame.
     The temperature anomaly we want to calculate is simply the temperature for one month in `monthlyData` minus the corresponding monthly average temperature from the `referenceTemps` data Series.
-    You should thus end up with a new column in the `monthlyTemps` DataFrame showing the temperature anomaly, the difference in temperature for a given month (e.g., February 1960) compared to the average (e.g., for February 1952-1980).
+    You should thus end up with a new column in the `monthlyData` DataFrame showing the temperature anomaly, the difference in temperature for a given month (e.g., February 1960) compared to the average (e.g., for February 1952-1980).
 
 - Upload the updated script to your repository for this week's exercise.
 
