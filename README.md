@@ -14,7 +14,7 @@ If you are uncertain about **the style of your code**, take a look at the **[PEP
 
 # Data
 
-For problems 1 and 2 in this exercise we will be using climate data from the Helsinki-Vantaa airport station.
+For problems 1-3 in this exercise we will be using climate data from the Helsinki-Vantaa airport station.
 For these problems, we have daily observations obtained from the [NOAA Global Historical Climatology Network](https://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND).
 The file was downloaded using the "Custom GHCN-Daily Text" output format, including the geographic location, precipitation (`PRCP`), average temperature (`TAVG`), maximum temperature (`TMAX`), and minimum temperature (`TMIN`).
 The file for this problem is exactly as available from the NOAA website.
@@ -22,13 +22,47 @@ You should start by downloading [a copy of the data file](1091402.txt).
 Note once again that temperatures in this dataset are given in degrees Fahrenheit, as noted in the [sample data file](ftp://ftp.ncdc.noaa.gov/pub/data/cdo/samples/GHCND_sample_pdf.pdf).
 Additional information about the data format can be found in the [hints for Exercise 6](https://geo-python.github.io/2017/lessons/L6/exercise-6-hints.html).
 
-# Problem 1 - Reading in a tricky data file
+# Problem 1 - Reading in a tricky data file (3 points)
 
+You first task for this exercise is to read in the data file to a variable called `data`.
+This should be done using the `read_csv()` function in Pandas, and the resulting DataFrame should have the following attributes:
 
+- The numerical values for rainfall and temperature read in as numbers
+- The second row of the datafile should be skipped, but the text labels for the columns should be from the first row
+- The no-data values should properly be converted to `NaN`
+- The data should be indexed by the `DATE`, properly parsed to be a date index
 
-df = pd.read_csv('1091402.txt', sep='\s+', skiprows=[1], na_values='-9999', index_col='DATE', parse_dates=True)
-df['2017-01-01':'2017-02-01']['TAVG'].mean()
+You can find hints about how to do these things in the [description of Exercise 5](https://github.com/Geo-Python-2017/Exercise-5) and the [hints for Exercise 6](https://geo-python.github.io/2017/lessons/L6/exercise-6-hints.html).
 
-# Problem 2 - Calculating temperature anomalies (5 pts)
+- How many non-NaN values are there for `TAVG`?
+- What about for `TMIN`?
+- How many days total are covered by this data file?
+- When is the first observation?
+- When is the last?
 
+For this problem
 
+1. Create a new script file called `temperature_anomalies.py`
+2. Make sure the script can read in the data file
+3. Have the script print out the requested values for the questions above to the screen
+4. Upload a copy to your repository for this week's exercise.
+
+# Problem 2 - Calculating monthly average temperatures (3 points)
+
+For this problem our goal is to calculate monthly average temperature values in degrees Celsius from the daily values we have in the data file.
+You can use the `DataFrame.resample()` function for this.
+You goal is to figure out how to use the `resample()` function to directly calculate the mean monthly temperatures from the daily observation values.
+You can again consult the [hints for Exercise 6](https://geo-python.github.io/2017/lessons/L6/exercise-6-hints.html) if you are stuck.
+
+For this problem modify your `temperature_anomalies.py` script to
+
+1. Calculate the monthly average temperatures for the entire data file using the `resample()` function
+2. Save the output to a new Pandas Series called `dataMonths`
+3. Create a second Series called `dataMonthsC` that has the monthly temperatures in Celsius.
+4. Merge the two data Series into a single Pandas DataFrame using the `pd.concat()` function.
+4. Upload the updated script to your repository for this week's exercise.
+
+# Problem 3 - Calculating temperature anomalies (4 points)
+
+In this problem, you should now calculate the temperature anomalies to see how temperatures have been changing on average over the age range in the data file.
+First, we need to calculate a reference temperature value, which is the average temperature 
