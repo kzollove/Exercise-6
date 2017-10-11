@@ -39,7 +39,7 @@ You can find hints about how to do these things in the [description of Exercise 
 - When is the first observation?
 - When is the last?
 - What was the average temperature of the whole data file (all years)?
-- What was the average temperature of the ``Summer 69`` (i.e. including months May, June, July, August of the year 1969)?
+- What was the `TMAX` temperature of the ``Summer 69`` (i.e. including months May, June, July, August of the year 1969)?
 
 **For this problem**
 
