@@ -98,7 +98,7 @@ Write your codes into a separate `weather_comparisons.py` file.
 
 After you have downloaded the data. you should first,
 
-- Calculate the average temperature using columns `TMAX` and `TMIN` and insert those values into a column called `TAVG`.
+- Calculate the average temperature using columns `TMAX` and `TMIN` and insert those values into a new column called `TAVG`.
 
 Next, you should use the approaches learned during this week and the same approaches as in Problem 3 to answer / do:
 
