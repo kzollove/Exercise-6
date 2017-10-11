@@ -91,7 +91,7 @@ In order to complete the problem, you must do two things:
 Download your own data (daily summaries for years **1959-2017 August**) for **Rovaniemi Apukka**, from [NOAA Climate Data Online Search](https://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND).
 Make sure to click on starting day (and ending day) in the date selection panel after changing year!
 After you have searched, click “Add to cart” for a selected station, then go to cart. Select the ``Custom GHCN-Daily Text`` -format for the resulting output file and hit continue.
-From ``Station Detail & Data Flag Options`` choose all available attributes, i.e. Station Name, Geographic Location, Include Data Flags (and optionally Precipitation which is a separate button below).
+From ``Station Detail & Data Flag Options`` choose all available attributes, i.e. Station Name, Geographic Location, Include Data Flags, and also Precipitation and Temperature which is under a separate button below).
 Use **Standard** units. From the next page, add your own email address where the weather data will be sent after a short moment.
 
 Write your codes into a separate `weather_comparisons.py` file.
