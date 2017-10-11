@@ -86,7 +86,7 @@ In order to complete the problem, you must do two things:
 - Upload the updated script to your repository for this week's exercise.
 
 
-## Problem 4 (5 points)
+# Problem 4 (5 points)
 
 Download your own data (daily summaries for years **1959-2017 August**) for **Rovaniemi Apukka**, from [NOAA Climate Data Online Search](https://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND).
 Make sure to click on starting day (and ending day) in the date selection panel after changing year!
