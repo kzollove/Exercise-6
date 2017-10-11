@@ -91,8 +91,11 @@ In order to complete the problem, you must do two things:
 Download your own data (daily summaries for years **1959-2017 August**) for **Sodankyla Lokka** (notice the place name should be without `ä` letter), from [NOAA Climate Data Online Search](https://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND).
 Make sure to click on starting day (and ending day) in the date selection panel after changing year!
 After you have searched, click “Add to cart” for a selected station, then go to cart. Select the ``Custom GHCN-Daily Text`` -format for the resulting output file and hit continue.
-From ``Station Detail & Data Flag Options`` choose two of the following attributes: Station Name, Geographic Location. **Notice:** Do **NOT** include data flags because it makes the data difficult to read. Take also Precipitation and Temperature which are under a separate button below. 
-Use **Standard** units. From the next page, add your own email address where the weather data will be sent after a short moment.
+
+- From ``Station Detail & Data Flag Options`` choose two of the following attributes: Station Name, Geographic Location. **Notice:** Do **NOT** include data flags because it makes the data difficult to read. Use **Standard** units.
+
+- Take also Precipitation and Temperature which are under a separate button below. 
+- From the next page, add your own email address where the weather data will be sent after a short moment.
 
 Write your codes into a separate `weather_comparisons.py` file.
 
@@ -102,7 +105,7 @@ After you have downloaded the data. you should first,
 
 Next, you should use the approaches learned during this week and the same approaches as in Problem 3 to answer / do:
 
-- Calculate the temperature anomalies in Kuusamo, i.e. the difference between referenceTemps and the average temperature for each month (see Problem 3). 
+- Calculate the temperature anomalies in Sodankyla, i.e. the difference between referenceTemps and the average temperature for each month (see Problem 3). 
 - Calculate the monthly temperature differences between Sodankyla and Helsinki stations
 - How different the summer temperatures (June, July, August) have been between Helsinki (used in Problems 1-3) and Sodankyla station?
     - Calculate the monthly differences into a DataFrame and save it (as `CSV` file) into your own Exercise repository for this week
