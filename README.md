@@ -27,10 +27,10 @@ Additional information about the data format can be found in the [hints for Exer
 You first task for this exercise is to read in the data file to a variable called `data`.
 This should be done using the `read_csv()` function in Pandas, and the resulting DataFrame should have the following attributes:
 
-- The numerical values for rainfall and temperature read in as numbers
-- The second row of the datafile should be skipped, but the text labels for the columns should be from the first row
-- The no-data values should properly be converted to `NaN`
-- The data should be indexed by the `DATE`, properly parsed to be a date index
+  - The numerical values for rainfall and temperature read in as numbers
+  - The second row of the datafile should be skipped, but the text labels for the columns should be from the first row
+  - The no-data values should properly be converted to `NaN`
+  - The data should be indexed by the `DATE`, properly parsed to be a date index
 
 You can find hints about how to do these things in the [description of Exercise 5](https://github.com/Geo-Python-2017/Exercise-5) and the [hints for Exercise 6](https://geo-python.github.io/2017/lessons/L6/exercise-6-hints.html).
 
