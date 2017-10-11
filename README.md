@@ -102,7 +102,8 @@ After you have downloaded the data. you should first,
 
 Next, you should use the approaches learned during this week and the same approaches as in Problem 3 to answer / do:
 
-- Are there weather anomalies in Rovaniemi: Calculate the monthly temperature differences between Rovaniemi and Helsinki stations
+- Calculate the temperature anomalies in Rovaniemi, i.e. the difference between referenceTemps and the average temperature for each month (see Problem 3). 
+- Calculate the monthly temperature differences between Rovaniemi and Helsinki stations
 - How different the summer temperatures (June, July, August) have been between Helsinki (used in Problems 1-3) and Rovaniemi station?
     - Calculate the monthly differences into a DataFrame and save it (as `CSV` file) into your own Exercise repository for this week
     - What were the summer mean temperatures for both of these stations?
