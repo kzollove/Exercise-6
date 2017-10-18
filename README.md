@@ -72,18 +72,24 @@ Our goal in this problem is to calculate monthly temperature anomalies in order 
 We will again do this by modifying your `temperature_anomalies.py` script.
 In order to complete the problem, you must do two things:
 
-- You need to calculate a mean temperature *for each month* for the period 1952-1980 using the data in the data file.
-    Note that the monthly mean here is slightly different than the monthly mean temperatures calculated earlier.
-    Here, we are looking to find the mean temperature for January in the period 1952-1980, February for the same period, etc.
-    You should end up with 12 values, 1 mean temperature for each month in that period, and store them in a Pandas Series called `referenceTemps`.
-    Remember, these temperatures should be in degrees Celsius.
+- You need to calculate a mean temperature *for each month* over the period 1952-1980 using the data in the data file.
+   You should end up with 12 values, 1 mean temperature for each month in that period, and store them in a new Pandas DataFrame called `referenceTemps`.
+   The columns in the new DataFrame should be titled `Month` and `avgTempsC`, or something similar.
+   For example, your `referenceTemps` data should be something like that below, 1 value for each month of the year (12 total):
+   
+   | Month    | avgTempsC        |
+   |----------|------------------|
+   | January  | -5.350916        |
+   | February | -5.941307        |
+   | March    | -2.440364        |
+   | ...      | ...              |
+   
+   Remember, these temperatures should be in degrees Celsius.
 
 - Once you have the monthly mean values for each of the 12 months, you can then calculate a temperature anomaly for every month in the `monthlyData` DataFrame.
-    The temperature anomaly we want to calculate is simply the temperature for one month in `monthlyData` minus the corresponding monthly average temperature from the `referenceTemps` data Series.
-    You should thus end up with a new column in the `monthlyData` DataFrame showing the temperature anomaly, the difference in temperature for a given month (e.g., February 1960) compared to the average (e.g., for February 1952-1980).
-
+    The temperature anomaly we want to calculate is simply the temperature for one month in `monthlyData` minus the corresponding monthly average temperature from the `avgTempsC` column in the `referenceTemps` DataFrame.
+    You should thus end up with a new column in the `monthlyData` DataFrame showing the temperature anomaly `Diff`, the difference in temperature for a given month (e.g., February 1960) compared to the average (e.g., for February 1952-1980).
 - Upload the updated script to your repository for this week's exercise.
-
 
 # Problem 4 (5 points)
 
