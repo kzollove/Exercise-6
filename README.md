@@ -117,3 +117,4 @@ Next, you should use the approaches learned during this week and the same approa
     - What were the summer mean temperatures for both of these stations?
     - What were the summer standard deviations for both of these stations?
 - Upload your script and data to GitHub.
+Git puush test
